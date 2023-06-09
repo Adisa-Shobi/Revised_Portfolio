@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Shobi</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/dc429f3b14.js" crossorigin="anonymous"></script>
+
+    <!-- My Script -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    <!-- My styling -->
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css')}}">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+</head>
+
+<body>
+    <header id="Home">
+        <nav class="nav-me fixed-top navbar navbar-expand-lg navbar-dark ">
+
+            <div class="uniform-margin container-fluid nav-wrapper">
+                <a class="navbar-brand" href="#"><img class="logo"
+                        src="{{ url_for('static', filename='images/logo.jpg') }}" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div id="top-menu" class="navbar-nav ms-auto">
+                        <a class="link nav-link active" href="#Home">Home</a>
+                        <a class="link nav-link" href="#Portfolio">Portfolio</a>
+                        <a class="link nav-link" href="#Certificates">Certificates</a>
+                        <a class="link nav-link" href="#Contact">Contact</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row-banner uniform-margin">
+            <h1 id='main-heading'>I'm Shobi Ola-Adisa</h1>
+            <h3 class="subheading">A creative software engineer with a desire to turn concepts into actionable solutions and a love for solving problems.</h3>
+        </div>
+
+    </header>
+    <section id="Portfolio">
+        <div class="uniform-margin">
+            <h2 class="portfolio-heading">My Works</h2>
+
+            <div class="container">
+                <div class="row">
+                    <div class="column col-12 col-lg-6 col-md-6">
+                        <div class="card portfolio-item">
+                            <div class="Artvertise front">
+                                <div class="container">
+                                    <div class="tag-section">
+                                        <div class="tag">Express</div>
+                                        <div class="tag">React</div>
+                                        <div class="tag">Mongodb</div>
+                                        <div class="tag">JavaScript</div>
+                                        <div class="tag">Web</div>
+                                        <div class="tag">HTML</div>
+                                        <div class="tag">CSS</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="back">
+                                <h3 class="summary-heading">
+                                    Artvertise
+                                </h3>
+                                <div class="summary container-fluid">
+                                    <p>
+                                        Artvertise is a modern online marketplace built using cutting-edge technology like Express,
+                                         React, MongoDB, and JavaScript. Our platform provides a seamless and user-friendly experience
+                                          for artists and collectors alike. Its unique bidding system allows buyers to compete for their 
+                                          favorite pieces in real-time, creating an engaging experience for both buyers and sellers. 
+                                          It also offers auctions and curated collections, making it easy for collectors to discover new 
+                                          artists and styles. We utilize Passport for authentication, providing a secure and reliable way for users to log in 
+                                        and manage their accounts. To ensure that high-quality thumbnails are displayed for each piece of 
+                                        artwork, we use Sharp. This ensures that artwork is presented in the best possible light. 
+                                        We also use Multer to save image files, making it easy for artists to upload and manage their artwork. 
+                                        These packages and libraries, along with our state-of-the-art algorithms and advanced technology, 
+                                        create a platform that is both beautiful and functional. <a class="summary-link"
+                                        href="https://github.com/Adisa-Shobi/Artvertise">GitHub link</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-12 col-lg-6 col-md-6">
+                        <div class="card portfolio-item">
+                            <div class="X-lease front">
+                                <div class="container">
+                                    <div class="tag-section">
+                                        <div class="tag">Flask</div>
+                                        <div class="tag">Web</div>
+                                        <div class="tag">Python</div>
+                                        <div class="tag">React</div>
+                                        <div class="tag">JSX</div>
+                                        <div class="tag">HTML</div>
+                                        <div class="tag">CSS</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="back">
+                                <h3 class="summary-heading">
+                                    X-lease
+                                </h3>
+                                <div class="summary container-fluid">
+                                    <p>
+                                        X-lease is a cutting-edge project that is transforming the world of device leasing and 
+                                        rental services for creatives. Built using Flask and React, our platform offers an 
+                                        intuitive and efficient user experience. Our SQL database enables easy management of devices and 
+                                        leases. With a focus on high-end devices, such as MacBooks and iPads, 
+                                        X-lease allows users to lease devices at a fraction of the cost of purchasing them. Plus, 
+                                        our unique rental service enables users to earn money by renting out their own devices when not in use. 
+                                        X-lease is leading the way in device leasing and rental services with its advanced technology, 
+                                        database, and user-friendly interface. Join us today and experience the power of X-lease.
+                                        <a class="summary-link"
+                                        href="https://github.com/Adisa-Shobi/X-lease">GitHub link</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-12 col-lg-6 col-md-6">
+                        <div class="card portfolio-item">
+                            <div class="Airbnb front">
+                                <div class="container">
+                                    <div class="tag-section">
+                                        <div class="tag">Flask</div>
+                                        <div class="tag">Web</div>
+                                        <div class="tag">Python</div>
+                                        <div class="tag">Bootstrap</div>
+                                        <div class="tag">HTML</div>
+                                        <div class="tag">CSS</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="back">
+                                <h3 class="summary-heading">
+                                    Airbnb Clone
+                                </h3>
+                                <div class="summary container-fluid">
+                                    <p>
+                                        This innovative Airbnb clone project, built with Flask, Python, and an SQL database, 
+                                        offers a seamless user experience for peer-to-peer vacation rentals. 
+                                        With real-time booking and customizable search filters, users can easily 
+                                        find and book their perfect vacation rental. Hosts can also manage their 
+                                        properties and communicate with guests via the platform's user-friendly interface. 
+                                        Whether it's an apartment, villa, or unique accommodation, users can choose 
+                                        from a wide variety of rentals while enjoying the same level of trust as the original 
+                                        Airbnb service. <a class="summary-link"
+                                        href="https://github.com/Adisa-Shobi/AirBnB_clone_v4">GitHub link</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-12 col-lg-6 col-md-6">
+                        <div class="card portfolio-item">
+                            <div class="SEP-Africa front">
+                                <div class="container">
+                                    <div class="tag-section">
+                                        <div class="tag">
+                                            Flutter
+                                        </div>
+                                        <div class="tag">
+                                            Mobile Dev
+                                        </div>
+                                        <div class="tag">UI Design</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <h3 class="summary-heading">
+                                    Student Enterpreneurs Programme Africa
+                                </h3>
+                                <div class="summary container-fluid">
+                                    <p>
+                                        I built the Student Entrepreneurs Programme Mobile Application in response to
+                                        accessibility problems. Since I made it in late March 2021, It has solved this
+                                        problem and has racked over 100 installs. Like this project, I provide highly
+                                        functional and beautiful technological solutions in the form of Websites and
+                                        mobile Applications to anyone needing my services. <a class="summary-link"
+                                            href="https://play.google.com/store/apps/details?id=com.digitalcraft360.sep_africa_app">Playstore
+                                            link</a>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-12 col-lg-6 col-md-6">
+
+                        <div class="card portfolio-item">
+                            <div class="EduCraft front">
+                                <div class="container">
+                                    <div class="tag-section">
+                                        <div class="tag">
+                                            Flutter
+                                        </div>
+                                        <div class="tag">
+                                            Mobile Dev
+                                        </div>
+                                        <div class="tag">
+                                            Dart
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="back">
+                                <h3 class="summary-heading">
+                                    EduCraft 360
+                                </h3>
+                                <div class="summary container-fluid">
+                                    <p>
+                                        EduCraft 360 is an extensive School management platform that I worked on at
+                                        Digital Craft 360. It has many features, including a custom online platform for
+                                        testing, live class/meeting sessions, and attendance management. It
+                                        would be any teachers delight to have their work aided by this well thought out
+                                        platform.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="column col-12 col-lg-6 col-md-6">
+                        <div class="card portfolio-item">
+                            <div class="Website front">
+                                <div class="container">
+                                    <div class="tag-section">
+                                        <div class="tag">Flask</div>
+                                        <div class="tag">Web</div>
+                                        <div class="tag">Python</div>
+                                        <div class="tag">Bootstrap</div>
+                                        <div class="tag">HTML</div>
+                                        <div class="tag">CSS</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="back">
+                                <h3 class="summary-heading">
+                                    My Website
+                                </h3>
+                                <div class="summary container-fluid">
+                                    <p>
+                                        Beyond its function as a marketing tool, I built this website as an example of
+                                        the websites I make for clients. Each project will follow the same process, and
+                                        you can be assured that it will satisfy all your requirements for requesting a
+                                        website.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="column col-12 col-lg-4 col-md-6">
+                        <div class="card portfolio-item">
+                            <div class="front">
+
+                                Front
+
+
+                            </div>
+                            <div class="back">
+                                Back
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-12 col-lg-4 col-md-6">
+                        <div class="card portfolio-item">
+                            <div class="front">
+
+                                Front
+
+
+                            </div>
+                            <div class="back">
+                                Back
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+    </section>
+
+    <section id="Certificates">
+
+        <div class="uniform-margin">
+
+            <h3 class="cert-heading">
+                Certificates
+            </h3>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button> -->
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{{ url_for('static', filename='images/Udemy.jpg') }}" class="d-block cert w-80"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ url_for('static', filename='images/Flutter.jpg') }}" class="d-block cert w-80"
+                            alt="...">
+                    </div>
+                    <!-- <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                    </div> -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section id="Contact">
+
+
+
+        <div class="">
+            <div class="contact uniform-margin">
+
+                <div class="contact-form">
+                    <h3 class="contact-heading">
+                        Need to Contact me?
+                    </h3>
+                    <form novalidate action="{{ url_for('home') }}" method="post">
+
+                        {{ form.csrf_token }}
+                        <div class="form-feild">
+                            {{ form.name.label }}
+                            {{ form.name(id="contactName") }}
+                        </div>
+                        <div class="form-feild">
+                            {{ form.email.label }}
+                            {{ form.email(id="contactEmail") }}
+                        </div>
+                        <div class="form-feild">
+                            {{ form.subject.label }}
+                            {{ form.subject(id="contactSubject") }}
+                        </div>
+                        <div class="form-feild">
+                            {{ form.message.label }}
+                            {{ form.message(rows="8", id="contactMessage") }}
+                        </div>
+                        <div class="form-feild">
+                            <button class="submit">Submit</button>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="process ">
+                    <h3>My process</h3>
+                    <p>
+                        It takes approximately <span class="emphasis">three appearances</span> for your brand to <span
+                            class="emphasis">make an
+                            impression</span> on any user. When
+                        I build websites or mobile applications,<span class="emphasis">my goal</span> is to imprint the
+                        right image on
+                        the <span class="emphasis">first
+                            encounter</span> . To achieve this, I exploit each component by carefully selecting colors,
+                        typography
+                        and ranking each item on an importance scale. Each project goes through multiple stages of
+                        scrutiny before I deliver the final product. All these practices add up to
+                        create a <span class="emphasis">lasting impression</span> in the mind of the audience.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+    <footer id="footer">
+        <a href="#Home" class="go-to-top">
+            <i class="fas fa-circle icon-background">
+                <i class="fas fa-chevron-up icon-foreground"></i>
+            </i>
+            <!-- <i class="fas fa-chevron-circle-up"></i> -->
+        </a>
+
+        <div class="uniform-margin">
+
+            <div class="rule"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="copyright col-12 col-lg-6">
+                        <p>
+                            Shobi Ola-Adisa
+                        </p>
+                        <i class="fas fa-circle circle-divide"></i>
+                        <p>Copyright 2021</p>
+                    </div>
+
+                    <div class="social-links col-12 col-lg-6">
+                        <span class="socials fab fa-instagram fa-2x"></span>
+                        <a href="https://www.linkedin.com/in/shobi-ola-adisa/"><span
+                                class="socials fab fa-linkedin-in fa-2x"></span></a>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+    <!-- ---------------------------- JavaScript------------------------ -->
+
+
+</body>
+
+</html>
