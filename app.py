@@ -5,7 +5,7 @@ from wtforms import StringField, TextAreaField, SubmitField
 from wtforms.validators import DataRequired, Email
 from flask_bootstrap import Bootstrap
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 load_dotenv()
 MY_EMAIL = os.environ.get("EMAIL")
