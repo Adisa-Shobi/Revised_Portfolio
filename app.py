@@ -5,19 +5,20 @@ from wtforms import StringField, TextAreaField, SubmitField
 from wtforms.validators import DataRequired, Email
 from flask_bootstrap import Bootstrap
 import os
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 load_dotenv()
 MY_EMAIL = os.environ.get("EMAIL")
 MY_PASSWORD = os.environ.get("PASSWORD")
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
+app.secret_key = os.urandom(24)
 Bootstrap(app)
 
 
 class ContactForm(FlaskForm):
     name = StringField(label='Name*', validators=[DataRequired()])
-    email = StringField(label='Email', validators=[DataRequired(), Email()])
+    email = StringField(label='Email', validators=[DataRequired()])
     subject = StringField(label='Subject')
     message = TextAreaField(label='Message', validators=[DataRequired()])
     submit = SubmitField(label='SUBMIT')
@@ -33,7 +34,11 @@ def home():
             email = contact_form.email.data
             subject = contact_form.subject.data
             message = contact_form.message.data
-            msg = f"Subject: {subject}\n\n{name} wants to make contact\nEmail: {email}\n{message}"
+            msg = "Subject: {subject}\n\n{name} wants to make contact\nEmail: {email}\n{message}".format(
+                subject=subject,
+                name=name,
+                email=email,
+                message=message)
             with smtplib.SMTP(host="smtp.gmail.com", port=587) as connection:
                 connection.starttls()
                 connection.login(MY_EMAIL, MY_PASSWORD)
@@ -53,4 +58,4 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
