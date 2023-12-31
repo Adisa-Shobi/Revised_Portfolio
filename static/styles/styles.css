@@ -134,6 +134,14 @@ h1{
     /* background-size: cover; */
 }
 
+.Whatsnxt{
+    background-image: url("../images/Whatsnxt.png");
+}
+
+.Lena{
+    background-image: url("../images/Lena.png");
+}
+
 .Airbnb{
     background-image: url("../images/airbnb.jpg");
     /* background-size: cover; */
@@ -385,6 +393,7 @@ textarea{
 
 .cert{
     padding: 50px 25px;
+
 }
 
 .carousel-inner img {
