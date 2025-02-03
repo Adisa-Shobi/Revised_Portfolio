@@ -111,6 +111,10 @@ h1{
    
 } */
 /* ------------------------------Individual Cards------------------- */
+.BMS {
+    background-image: url("../images/bms.jpg");
+}
+
 .SEP-Africa{
     background-image: url("../images/SEP-Africa.jpg");
 }
